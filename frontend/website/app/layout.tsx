@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Urban Company Clone",
-  description: "This is urban company clone website.",
+  title: "Home Eaze",
+  description: "Where Home Meets Convenience.",
+  icons: { icon: "/logo.jpeg", apple: "/logo.jpeg" },
 };
 
 export default function RootLayout({
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         {children}
       </body>

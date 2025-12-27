@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Logo from "../../public/vercel.svg";
 import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
 import Locate from "@/assets/svgs/Locate";
@@ -23,14 +22,14 @@ export default function Navbar() {
         <div className="flex items-center gap-2 cursor-pointer">
           <Image
             className="bg-black rounded-lg p-1.5"
-            src={Logo}
-            width={32}
-            height={32}
-            alt="Urban Company"
+            src={"/logo.jpeg"}
+            width={84}
+            height={36}
+            alt="Home Eaze"
           />
-          <div className="leading-tight">
-            <div className="text-lg font-semibold">Urban</div>
-            <div className="text-sm text-neutral-600 -mt-1">Company</div>
+          <div className="leading-tight flex flex-row items-center">
+            <div className="text-lg font-bold">Home</div>
+            <div className="text-lg font-semibold text-neutral-600">Eaze</div>
           </div>
         </div>
 
@@ -84,7 +83,7 @@ export default function Navbar() {
           <div className="hidden lg:flex p-2 rounded-full border border-neutral-200 bg-white shadow-sm">
             <Cart />
           </div>
-          <div className="hidden lg:flex p-1.5 rounded-full border border-neutral-200 bg-white shadow-sm">
+          <div className="hidden lg:flex ">
             <UserCircle />
           </div>
 
@@ -136,11 +135,11 @@ export default function Navbar() {
               ))}
             </div>
 
-            <div className="flex gap-4 pt-3">
+            <div className="flex items-center gap-4 pt-3">
               <div className="p-2 rounded-full border border-neutral-200 bg-white shadow-sm">
                 <Cart />
               </div>
-              <div className="p-1.5 rounded-full border border-neutral-200 bg-white shadow-sm">
+              <div className="">
                 <UserCircle />
               </div>
             </div>
