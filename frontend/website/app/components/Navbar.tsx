@@ -34,7 +34,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-1 text-sm text-neutral-600">
+        <nav className="hidden md:flex items-center gap-1 text-sm text-neutral-600">
           {navItems.map((item) => (
             <div
               key={item}
@@ -55,7 +55,7 @@ export default function Navbar() {
         </nav>
 
         {/* Desktop Search */}
-        <div className="hidden lg:flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-3">
           <div className="flex items-center gap-2 px-3 py-2 rounded-xl border border-neutral-200 bg-white shadow-sm">
             <Locate />
             <span className="text-sm text-neutral-500">Bhagalpur, Bihar</span>
@@ -80,17 +80,17 @@ export default function Navbar() {
 
         {/* Actions */}
         <div className="flex items-center gap-3">
-          <div className="hidden lg:flex p-2 rounded-full border border-neutral-200 bg-white shadow-sm">
+          <div className="hidden md:flex p-2 rounded-full border border-neutral-200 bg-white shadow-sm">
             <Cart />
           </div>
-          <div className="hidden lg:flex ">
+          <div className="hidden md:flex ">
             <UserCircle />
           </div>
 
           {/* Mobile Button */}
           <button
             onClick={() => setOpen(!open)}
-            className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full border border-neutral-200 bg-white shadow-sm"
+            className="md:hidden flex items-center justify-center w-10 h-10 rounded-full border border-neutral-200 bg-white shadow-sm"
           >
             <span className="text-xl">≡</span>
           </button>
@@ -98,7 +98,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Search */}
-      <div className="lg:hidden px-4 pb-3 space-y-2">
+      <div className="md:hidden px-4 pb-3 space-y-2">
         <div className="flex items-center gap-3 px-4 py-2 rounded-xl border border-neutral-200 bg-white shadow-sm">
           <Search />
           <span className="text-sm text-neutral-400 flex-1">
@@ -122,7 +122,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            className="lg:hidden px-6 pb-6 space-y-5 bg-white"
+            className="md:hidden px-6 pb-6 space-y-5 bg-white"
           >
             <div className="space-y-3">
               {navItems.map((item) => (

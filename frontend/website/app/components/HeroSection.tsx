@@ -47,10 +47,10 @@ const images = [
 export default function HeroSection() {
   return (
     <section className="px-4 sm:px-6 py-12 bg-white">
-      <div className="mx-auto max-w-7xl flex flex-col lg:flex-row gap-12">
+      <div className="mx-auto max-w-7xl flex flex-col md:flex-row gap-12">
         {/* Left */}
         <div className="flex-1">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight mb-8">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight mb-8">
             Home services,
             <br />
             <span className="text-neutral-500">delivered to you</span>
@@ -91,20 +91,20 @@ export default function HeroSection() {
 
         {/* Right */}
         <div className="flex-1">
-          <div className="grid grid-cols-2 gap-2 lg:h-[520px] lg:grid-cols-3 lg:grid-rows-2">
-            <div className="relative h-[200px] lg:h-auto col-span-2 lg:col-span-1 lg:row-span-2 lg:rounded-tl-3xl lg:rounded-bl-3xl rounded-t-xl overflow-hidden">
+          <div className="grid grid-cols-2 gap-2 md:h-[520px] md:grid-cols-3 md:grid-rows-2">
+            <div className="relative h-[200px] md:h-auto col-span-2 md:col-span-1 md:row-span-2 md:rounded-tl-3xl md:rounded-bl-3xl rounded-t-xl overflow-hidden">
               <Image src={images[0]} alt="" fill className="object-cover" />
             </div>
 
-            <div className="relative h-[200px] lg:h-auto  overflow-hidden">
+            <div className="relative h-[200px] md:h-auto  overflow-hidden">
               <Image src={images[1]} alt="" fill className="object-cover" />
             </div>
 
-            <div className="relative h-[200px] lg:h-auto lg:rounded-tr-3xl overflow-hidden">
+            <div className="relative h-[200px] md:h-auto md:rounded-tr-3xl overflow-hidden">
               <Image src={images[2]} alt="" fill className="object-cover" />
             </div>
 
-            <div className="relative col-span-2 h-[200px] lg:h-auto lg:rounded-br-3xl rounded-b-xl overflow-hidden  lg:block">
+            <div className="relative col-span-2 h-[200px] md:h-auto md:rounded-br-3xl rounded-b-xl overflow-hidden  md:block">
               <Image src={images[3]} alt="" fill className="object-cover" />
             </div>
           </div>
